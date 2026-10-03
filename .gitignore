@@ -1,5 +1,6 @@
 # Build output
 dist/
+.firebase/
 .astro/
 
 # Dependencies
