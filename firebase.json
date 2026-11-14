@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "sipsnsuds-510519",
     "public": "dist",
     "cleanUrls": true,
     "ignore": [
@@ -7,6 +8,15 @@
       "**/node_modules/**"
     ],
     "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex, nofollow"
+          }
+        ]
+      },
       {
         "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|woff|woff2|ttf|css|js)",
         "headers": [
